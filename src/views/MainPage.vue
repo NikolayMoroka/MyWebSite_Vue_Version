@@ -21,6 +21,9 @@
       <v-col cols="12">
         <InfoBlock/>
       </v-col>
+      <v-col cols="12">
+        <Contacts/>
+      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -28,12 +31,14 @@
 <script>
 import Welcome from "./Welcome.vue"
 import InfoBlock from "./InfoBlock.vue"
+import Contacts from "./Contacts.vue"
 
 export default {
   name: "MainPage",
   components: {
     Welcome,
-    InfoBlock
+    InfoBlock,
+    Contacts
   },
   data: () => ({
     fab: false,

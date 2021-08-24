@@ -82,6 +82,22 @@ export default {
     background-color: #3f0a7c !important;
   }
 
+  .title_block {
+    color: white;
+    font-size: 21px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    font-family: 'PT Sans', sans-serif !important;
+}
+
+.text_block {
+    color: white;
+    font-family: 'PT Sans', sans-serif !important;
+    font-size: 18px;
+}
+
   /* style for animation */
 
 /* .animation_backInLeft {

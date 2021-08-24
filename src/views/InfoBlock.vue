@@ -100,19 +100,4 @@ export default {
 .info_block {
     color: white;
 }
-
-.title_block {
-    font-size: 21px;
-    line-height: 1.2;
-    letter-spacing: 2px;
-    font-weight: 700;
-    /* text-transform: uppercase; */
-    font-family: 'PT Sans', sans-serif !important;
-}
-
-.text_block {
-    font-family: 'PT Sans', sans-serif !important;
-    font-size: 18px;
-}
-
 </style>
