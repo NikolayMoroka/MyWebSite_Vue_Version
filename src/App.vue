@@ -84,7 +84,7 @@ export default {
 
   .title_block {
     color: white;
-    font-size: 21px;
+    font-size: 25px;
     line-height: 1.2;
     letter-spacing: 2px;
     font-weight: 700;
@@ -95,7 +95,13 @@ export default {
 .text_block {
     color: white;
     font-family: 'PT Sans', sans-serif !important;
-    font-size: 18px;
+    font-size: 22px;
+}
+
+.contacts_small_text {
+    color: white;
+    font-family: 'PT Sans', sans-serif !important;
+    font-size: 16px;
 }
 
   /* style for animation */

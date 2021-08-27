@@ -6,7 +6,12 @@
                     {{ items.title }}
                 </h3>
                 <div v-for="text in items.text" :key="text.index" class="text-left">
-                    <span class="text_block"> {{ text }} </span>
+                    <span class="text_block"> {{ text }} </span> 
+                    <span 
+                    @click="dialog = true"
+                    style="font-weight: 500; font-size: 18px; text-decoration: underline;">
+                     (more)
+                    </span>
                 </div>
 
                 <ul v-if="items.list" class="text-left">
@@ -21,6 +26,29 @@
                 <img width="90%" :src="items.image" alt="">
             </v-col>
         </v-row>
+        <v-dialog
+        v-model="dialog"
+        fullscreen
+        style="background-color: white"
+        >
+            <div style="height: 100vh; background-color: #fff">
+                <v-app-bar color="#290653">
+                    <v-btn icon @click="dialog = false">
+                        <v-icon x-large color="#fff">
+                            mdi-chevron-left
+                        </v-icon>
+                    </v-btn>
+                </v-app-bar>
+
+                <v-container>
+                    <v-row>
+                        <v-col>
+                            <p style="color: #290653;" class="text_block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis at ratione quia dolorem aliquid fugiat consectetur ullam repudiandae aperiam. Ab iusto iure fugiat ut dolorem, aperiam placeat repudiandae dolor neque.</p>
+                        </v-col>
+                    </v-row>
+                </v-container>
+            </div>
+        </v-dialog>
     </div>
 </template>
 
@@ -91,7 +119,8 @@ export default {
         ],
         image: require('../assets/quality.png')
       },
-    ]
+    ],
+    dialog: false
   }),  
 }
 </script>
